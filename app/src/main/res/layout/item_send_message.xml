@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+
+    >
+
+
+    <pw.xiaohaozi.bubbleview.BubbleView
+        android:id="@+id/bv_defaule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:bubbleColor="@color/blue_like"
+        android:layout_marginStart="70dp"
+        android:layout_toStartOf="@+id/Chat_send_head_pic"
+        android:layout_marginEnd="5dp"
+        android:layout_centerVertical="true"
+        app:bubbleIndicatorLocation="centre"
+        app:bubbleIndicatorDirection="right"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/Chat_send_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="你好啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+            android:textColor="@color/white"
+             />
+
+
+    </pw.xiaohaozi.bubbleview.BubbleView>
+
+    <ImageView
+        android:id="@+id/Chat_send_head_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+
+</RelativeLayout>

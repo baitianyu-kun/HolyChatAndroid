@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/register_title"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/security_qu_lay"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/psw_ensure_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Security_qu_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edit_text_shape"
+            android:hint="@string/security_question"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/psw_ensure_lay"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/psw_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Register_psw_ensure_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edit_text_shape"
+            android:hint="@string/user_ensure_psw"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_lay"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/security_an_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button_long_pressed"
+            android:text="@string/register_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/security_an_lay"
+        android:layout_below="@+id/security_qu_lay"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Security_an_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/shape_edit_text_shape"
+            android:hint="@string/security_answer"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/psw_lay"
+        android:layout_below="@+id/name_lay"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Register_user_psw_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edit_text_shape"
+            android:hint="@string/user_psw"
+
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/name_lay"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/Back_login_btn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/User_name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/shape_edit_text_shape"
+            android:hint="@string/user_name"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/Back_login_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="-12dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/transparent"
+        android:tint="@color/gray"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</RelativeLayout>

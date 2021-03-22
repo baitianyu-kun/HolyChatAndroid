@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/Chat_get_head_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+    <pw.xiaohaozi.bubbleview.BubbleView
+        android:id="@+id/bv_defaule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:bubbleColor="@color/a_little_white"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@+id/Chat_get_head_pic"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        app:bubbleIndicatorLocation="centre"
+        app:bubbleIndicatorDirection="left"
+        android:layout_marginBottom="10dp">
+
+
+
+        <TextView
+            android:id="@+id/Chat_get_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Chat_get_head_pic"
+            android:text="你好啊啊啊啊啊"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+    </pw.xiaohaozi.bubbleview.BubbleView>
+
+
+
+</RelativeLayout>

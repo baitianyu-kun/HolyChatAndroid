@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddNewFriendActivity">
+
+    <RelativeLayout
+        android:id="@+id/add_new_friend_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Add_Friend_et"
+            android:layout_width="244dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/Add_Friend_back_btn"
+            android:background="@drawable/shape_edit_text_shape"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/Add_Friend_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_like"
+            android:layout_toEndOf="@+id/Add_Friend_et"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/Add_Friend_back_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:background="#00FFFFFF"
+            android:tint="#000000"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/abc_vector_test" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_new_friend_lay"
+        android:gravity="center"
+        android:text="@string/search_result" />
+
+    <TextView
+        android:id="@+id/Add_Friend_No_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:text="@string/no_content" />
+
+    <ListView
+        android:id="@+id/Add_Friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Search_result">
+
+    </ListView>
+</RelativeLayout>

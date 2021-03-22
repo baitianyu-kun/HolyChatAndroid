@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ChatFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.holychat.View.StatusBarHeightView
+            android:id="@+id/chat_status_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:use_type="use_padding_top"
+            android:orientation="vertical"
+            android:background="@color/blue_like"
+            tools:ignore="RtlCompat"
+            android:visibility="visible">
+        </com.example.holychat.View.StatusBarHeightView>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_like"
+            android:layout_below="@id/chat_status_Bar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/Chat_Friends_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_below="@id/chat_status_Bar"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/no_choose_friend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="35dp"
+            android:text="@string/no_choose_friend_chat" />
+
+        <ListView
+            android:id="@+id/Chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/Chat_innerRelativeLayout"
+            android:layout_below="@+id/toolbar2"
+            android:listSelector="@color/transparent"
+            android:clickable="false"
+            android:transcriptMode="normal"
+            android:divider="@color/transparent" >
+
+        </ListView>
+
+        <RelativeLayout
+
+            android:id="@+id/Chat_innerRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/cardview_light_background"
+            android:layout_centerHorizontal="true"
+            android:background="#C8C8C8">
+
+            <Button
+                android:id="@+id/Chat_send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/blue_like"
+                android:textColor="@color/white"
+                android:text="@string/send" />
+
+            <EditText
+                android:id="@+id/Chat_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toStartOf="@+id/Chat_send_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_chatinput"
+                android:textColorHint="@color/black"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/An_security_qu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignStart="@+id/An_security_qu_et"
+            android:text="@string/security_question"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/An_security_qu_et"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/An_security_qu_tv"
+            android:background="@drawable/shape_edit_text_shape"
+            android:hint="@string/input_an"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/An_security_qu_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/An_secu_qu_sure_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_button_short_press"
+                android:text="@string/ok_btn"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="10dp"
+                android:foreground="?selectableItemBackground"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/An_secu_qu_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_button_short_press"
+                android:layout_toEndOf="@+id/An_secu_qu_sure_btn"
+                android:text="@string/cancel"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

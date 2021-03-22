@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FindPswActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/find_psw_title"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/Find_psw_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_edit_text_shape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView12"
+        android:hint="@string/find_psw_account_in"/>
+
+    <Button
+        android:id="@+id/Find_psw_sure_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Find_psw_et"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_button_long_press"
+        android:textColor="@color/white"
+        android:text="@string/ok_btn" />
+
+    <ImageButton
+        android:id="@+id/Find_psw_back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Find_psw_sure_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/icon_round_back"
+        android:backgroundTint="@color/gray" />
+
+</RelativeLayout>

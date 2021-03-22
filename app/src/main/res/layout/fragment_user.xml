@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.UserFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/user_frag_lay"
+            android:layout_below="@+id/chat_status_Bar"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/User_frag_pic_ig"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="?android:attr/alertDialogIcon"
+                app:srcCompat="@drawable/shaoe_button_long_not_pressed" />
+
+            <TextView
+                android:id="@+id/User_frag_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/User_frag_pic_ig"
+                android:layout_centerVertical="true"
+                android:text="baitianyu"
+                android:layout_marginStart="50dp"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <com.example.holychat.View.StatusBarHeightView
+            android:id="@+id/chat_status_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:use_type="use_padding_top"
+            android:orientation="vertical"
+            android:background="@color/white"
+            tools:ignore="RtlCompat"
+            android:visibility="visible">
+        </com.example.holychat.View.StatusBarHeightView>
+
+        <Button
+            android:id="@+id/User_frag_out_btn"
+            android:layout_width="240dp"
+            android:layout_height="53dp"
+            android:layout_below="@+id/user_frag_lay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/selector_button_short_press"
+            android:textColor="@color/white"
+            android:text="@string/log_out" />
+
+    </RelativeLayout>
+
+</FrameLayout>
